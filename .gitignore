@@ -1,0 +1,9 @@
+# Godot
+project/.godot/
+*.import.bak
+# build output (regenerate with tools/export_web.sh or the GitHub Action)
+build/
+# Blender
+*.blend1
+__pycache__/
+project/export/

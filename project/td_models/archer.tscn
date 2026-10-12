@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://characters/archer/archer.glb" id="1_x7qae"]
+
+[node name="Archer" type="Node3D"]
+
+[node name="Model" type="Node3D" parent="." instance=ExtResource("1_x7qae")]
+transform = Transform3D(-0.33333334, 0, -2.9140926e-08, 0, 0.33333334, 0, 2.9140926e-08, 0, -0.33333334, 0, 0, 0)
+
+[node name="WeaponMount" type="BoneAttachment3D" parent="."]
+bone_name = "mixamorig_LeftHand"
+bone_idx = 20
+use_external_skeleton = true
+external_skeleton = NodePath("../Model/Archer/Skeleton3D")
+
+[node name="Muzzle" type="Marker3D" parent="WeaponMount"]
+transform = Transform3D(-3.7252903e-08, 5.960465e-08, 1, 1.0000001, -2.9802326e-08, 3.3527616e-08, 5.960466e-08, 1.0000001, 1.9984019e-15, -4.6975043e-08, 0.06499982, -0.004999995)
